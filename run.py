@@ -1,5 +1,6 @@
 import requests ,random ,time ,os #line:1
-
+TG_BOT_TOKEN=''
+TG_USER_ID=''
 if "TG_USER_ID"in os .environ and os .environ ["TG_USER_ID"]:#line:5
         TG_BOT_TOKEN ='1698539466:AAG4K86swWWty6AxeHf58sifhfjXhusiqCM'#line:6
         TG_USER_ID =os .environ ["TG_USER_ID"]#line:7
