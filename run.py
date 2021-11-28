@@ -34,14 +34,11 @@ def register_email (OOO000OOOOO00O000 ):#line:38
     O0OO00O0O0O000OO0 ='https://web-aws.antaizhongcheng.com/v1/register/email?token={}'.format (OOO000OOOOO00O000 )#line:46
     O0O0OO00O00OOO00O =requests .post (O0OO00O0O0O000OO0 ,files =OOO00O00OOO00OO00 )#line:48
 def main ():#line:84
-    if 'START' in os.environ and os.environ["START"] =='JKASNDWKND':
-        O00000OO00OOOO0OO =fristlogin ()#line:85
-        time .sleep (5 )#line:86
-        register_email (O00000OO00OOOO0OO )#line:87
-        time .sleep (5 )#line:88
-        invite (O00000OO00OOOO0OO )#line:89
-    else:
-        telegram_bot ('lutube','没有启动码，请去188极速列车公众号查看文章获取！')#li
+    O00000OO00OOOO0OO =fristlogin ()#line:85
+    time .sleep (5 )#line:86
+    register_email (O00000OO00OOOO0OO )#line:87
+    time .sleep (5 )#line:88
+    invite (O00000OO00OOOO0OO )#line:89
 def telegram_bot (O0O0O0OOOOOOO0O00 ,O0O00O000000O0O00 ):#line:50
     print ("\n")#line:51
     O0OOO0000OOOO0OO0 =TG_BOT_TOKEN #line:52
@@ -57,21 +54,18 @@ def telegram_bot (O0O0O0OOOOOOO0O00 ,O0O00O000000O0O00 ):#line:50
     OO0OO00000OO0O0O0 =requests .post (url ='https://api.telegram.org/bot%s/sendMessage'%(O0OOO0000OOOO0OO0 ),data =OO0OOO000OOOOOOOO )#line:64
     print (OO0OO00000OO0O0O0 .text )#line:65
 def invite (OO0OO0OOOO00000OO ):#line:66
-    OOO0OOOO00OO0OO00 =os .environ ["INVITECODE"]#line:67
+    OOO0OOOO00OO0OO00 ='ur104040265'#line:67
     OO0O0OOO0000OO00O ={'code':(None ,OOO0OOOO00OO0OO00 )}#line:68
     O00OOOO000O00OO00 ='https://pwc-ws.antaizhongcheng.com/v1/user/invite?token={}'.format (OO0OO0OOOO00000OO )#line:69
     OO00OOOOO000O0O00 =requests .post (O00OOOO000O00OO00 ,files =OO0O0OOO0000OO00O )#line:71
     print (OO00OOOOO000O0O00 .text )#line:72
     choice_vip ()#line:73
 def choice_vip ():#line:74
-    if 'TOKEN'in os .environ :#line:76
-        O000OO0OO000O0OO0 =os .environ ["TOKEN"]#line:77
-        O0O0000OO000OO0OO ='https://pwc-ws.antaizhongcheng.com/v1/lottery/1?token={}'.format (O000OO0OO000O0OO0 )#line:78
-        OO0O00OO000O00O00 =requests .post (O0O0000OO000OO0OO )#line:79
-        time .sleep (2 )#line:80
-        telegram_bot ('lutube','邀请完成！随机抽奖完成！')#line:81
-    else :#line:82
-        telegram_bot ('lutube','邀请完成！未开启随机抽奖！（需要抽奖请填写TOKEN)')#line:83
+    O000OO0OO000O0OO0 ='eyJ1c2VyX2lkIjoxMDQwNDAyNjUsImxhc3Rsb2dpbiI6MTYzMjUyNDQ2NX0.e1b2d439fdd9ddc082690d1b5a60ac53.4f18c194078c871232b7f204c0841712a6897a1139d2463fc41b0da1'#line:77
+    O0O0000OO000OO0OO ='https://pwc-ws.antaizhongcheng.com/v1/lottery/1?token={}'.format (O000OO0OO000O0OO0 )#line:78
+    OO0O00OO000O00O00 =requests .post (O0O0000OO000OO0OO )#line:79
+    time .sleep (2 )#line:80
+    telegram_bot ('lutube','邀请完成！随机抽奖完成！')#line:81
 
 if __name__ =='__main__':#line:90
     main ()
